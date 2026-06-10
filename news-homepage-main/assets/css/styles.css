@@ -2,7 +2,7 @@ body{
     background-color: white;
     /* font-family: 'Inter', sans-serif;   font-style: italic; */
 }
-
+/* Estilos para h1 */
 h1{
     font-weight: 800;
     color: hsl(240, 100%, 5%);
@@ -16,6 +16,18 @@ h1{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilos para Navbar_menu */
+.nav-menu{
+    list-style: none;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    padding: 0px;
 }
 /* .title_W{
     font-size: 50px;
