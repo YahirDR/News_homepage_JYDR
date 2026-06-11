@@ -3,15 +3,6 @@ body{
     background-color: white;
     /* font-family: 'Inter', sans-serif;   font-style: italic; */
 }
-/* Estilos para h1 */
-h1{
-    font-weight: 800;
-    color: hsl(240, 100%, 5%);
-    font-family: 'Inter', sans-serif;
-    font-size: 60px;
-    margin: 0;
-}
-
 /* ---- Estilos para NAVBAR ---- */
 .navbar{
     font-family: 'Inter', sans-serif;
@@ -46,19 +37,6 @@ h1{
     font-size: 50px;
     font-family: 'Inter', sans-serif;
 } */
-/* --- */
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==== ESTILOS PARA VERSIÓN MÓVIL (MOBILE) ==== */
 @media (max-width: 768px){
