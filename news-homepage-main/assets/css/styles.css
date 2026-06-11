@@ -1,3 +1,4 @@
+/* ==== ESTILOS PARA VERSIÓN ESCRITORIO (DESKTOP FIRST) ==== */
 body{
     background-color: white;
     /* font-family: 'Inter', sans-serif;   font-style: italic; */
@@ -17,19 +18,69 @@ h1{
     font-weight: 400;
     font-size: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 40px;
 }
 /* Estilos para Navbar_menu */
 .nav-menu{
     list-style: none;
+    display: flex;
+    flex: 1%;
+    justify-content: space-around;
+    margin-left: 50%;
+
 }
 .nav-menu a{
     text-decoration: none;
     color: hsl(236, 13%, 42%);
     padding: 0px;
 }
+/* Estilos para el botón de menú */
+.btnMenu{
+    display: none;
+}
+/* Diseño para navbar hoover */
+.nav-menu a:hover{
+    color: hsl(5, 85%, 63%);
+}
 /* .title_W{
     font-size: 50px;
     font-family: 'Inter', sans-serif;
 } */
+
+/* ==== ESTILOS PARA VERSIÓN MÓVIL (MOBILE) ==== */
+@media (max-width: 768px){
+    .navbar{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    /* Estilos para Navbar_menu */
+    .nav-menu{
+        /* list-style: none;
+        display: flex;
+        flex: 1%;
+        justify-content: space-around;
+        border: 1px solid blue;
+        margin-left: 50%; */
+        display: none;
+        
+    }
+    .nav-menu a{
+        text-decoration: none;
+        color: hsl(236, 13%, 42%);
+        padding: 0px;
+    }
+    /* Estilos para el botón de menú */
+    .btnMenu{
+        display: block;
+    }
+    /* Estilo para hoover */
+    .nav-menu a:hover{
+        color: hsl(5, 85%, 63%);
+    }
+
+}
