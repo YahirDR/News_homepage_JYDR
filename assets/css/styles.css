@@ -101,7 +101,9 @@ body{
     margin-right: 100px;
     align-self: start;
     background-color: hsl(240, 100%, 5%);
-    
+}
+.asideNewsItem_a{
+    text-decoration: none;
 }
 .asideNewsItem{
     padding: 50px 20px 80px 20px;
@@ -135,7 +137,10 @@ body{
     }
  
 }
-
+/* ------------ Estilos para la parte inferior de articulos destacados------------ */
+.recommendedNewsItem_a{
+    text-decoration: none;
+}
 
 /* ==== ESTILOS PARA VERSIÓN MÓVIL (MOBILE) ==== */
 @media (max-width: 768px){

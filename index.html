@@ -8,53 +8,53 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Frontend Mentor | News homepage</title>
 
-  <!-- ###### NAVBAR ###### -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- ###### HEADER ###### -->
+  
+  <header>
+      <!-- Seccion de barra de navegación (NAVBAR)-->
+    <nav class="navbar">
+        <!-- Titulo (LOGO W)-->
+      <img src="./assets/images/logo.svg" alt="logo W" class="logoW">
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+      <!-- Seccion para los botones que se deberan mostrar de acuerdo al tamaño, 
+      es decir, para (Mobile First) -->
+      <button class="btnMenu">
+        <img src="./assets/images/icon-menu.svg" alt="menu icon" class="iconMenu">
+      </button>
+    </nav>
+
+  </header>
+
 </head>
 <body>
-  <!-- Seccion de barra de navegación-->
-  <nav class="navbar">
-      <!-- Titulo (LOGO W)-->
-    <img src="./assets/images/logo.svg" alt="logo W" class="logoW">
-    <ul class="nav-menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">New</a></li>
-      <li><a href="#">Popular</a></li>
-      <li><a href="#">Trending</a></li>
-      <li><a href="#">Categories</a></li>
-    </ul>
-    <!-- Seccion para los botones que se deberan mostrar de acuerdo al tamaño, 
-    es decir, para (Mobile First) -->
-    <button class="btnMenu">
-      <img src="./assets/images/icon-menu.svg" alt="menu icon" class="iconMenu">
-    </button>
-  </nav>
 
 <!-- ###### MAIN ###### -->
-  <section class="news">
+  <main class="news">
     <article class="newArticle">
       <img src="./assets/images/image-web-3-desktop.jpg" 
       alt="web 3.0 image" class="imgNews">
         <!-- Título -->
         <div class="newContainerInfo">
           <h1 class="titleNew">The Bright Future of Web 3.0?</h1>
-
+        <!-- Botón para leer más -->
           <div class="newContainerInfoTextButton">
             <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
             But is it really fulfilling its promise?</p>
             <button class="btnReadMore">Read more</button>
           </div>
         </div>
-        <!-- Botón para leer más -->
     </article>
 
   <!-- Lista de noticias (aside) -->
     <aside class="asideNews">
       <!-- Artículo 1 -->
-      <a CLASS="asideNewsItem_a">
+      <a  href="#" CLASS="asideNewsItem_a">
         <article class="asideNewsItem">
             <h2>New</h2>
             <h3>Hydrogen VS Electric Cars</h3>
@@ -62,35 +62,46 @@
         </article>
       </a>
       <!-- Artículo 2 -->
-      <a CLASS="asideNewsItem_a">
+      <a href="#" CLASS="asideNewsItem_a">
         <article class="asideNewsItem">
             <h3>The Downsides of AI Artistry</h3>
             <p>What are the possible adverse effects of on-demand AI image generation?</p>
         </article>
       </a>
       <!-- Artículo 3 -->
-      <a CLASS="asideNewsItem_a">
+      <a href="#" CLASS="asideNewsItem_a">
         <article class="asideNewsItem">
             <h3>Is VC Funding Drying Up?</h3>
             <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </article>
       </a>
     </aside>
-  </section>
 <!-- Articulos destacados (articles) -->
-  <div class="article">
-      01
-      Reviving Retro PCs
-      What happens when old PCs are given modern upgrades?
+    <section class="recommendedNews">
+      <a href="#" class="recommendedNewsItem_a">
+        <article class="recommendedNewsItem">
+          <h2>01</h2>
+          <h3>Reviving Retro PCs</h3>
+        </article>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </a>
+      <a href="#" class="recommendedNewsItem_a">
+        <article class="recommendedNewsItem">
+            <h2>02</h2>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </article>
+      </a>
+      <a href="#" class="recommendedNewsItem_a">
+        <article class="recommendedNewsItem">
+          <h2>03</h2>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </article>
+      </a>
+    </section>
+  </main  >
 
-      02
-      Top 10 Laptops of 2022
-      Our best picks for various needs and budgets.
-
-      03
-      The Growth of Gaming
-      How the pandemic has sparked fresh opportunities.
-  </div>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
