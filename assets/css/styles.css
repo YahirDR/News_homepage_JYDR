@@ -4,6 +4,12 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+img{
+    display: block;
+    max-width: 100%;
 }
 /* ---- Estilos para NAVBAR ---- */
 .navbar{
@@ -192,41 +198,135 @@ body{
     text-decoration: none;
     color: inherit;
 }
-
+.recommendedNewsItem_a:hover{
+    .recommendedNewsItem h3{
+        color: hsl(5, 85%, 63%);
+    }
+}
 /* ==== ESTILOS PARA VERSIÓN MÓVIL (MOBILE) ==== */
 @media (max-width: 768px){
     .navbar{
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        border: 1px solid red;
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        align-items: center;
+        padding: 28px 20px 18px;
     }
-    /* Estilos para Navbar_menu */
+
+    .logoW{
+        width: 44px;
+        height: auto;
+    }
+
     .nav-menu{
-        /* list-style: none;
-        display: flex;
-        flex: 1%;
-        justify-content: space-around;
-        border: 1px solid blue;
-        margin-left: 50%; */
         display: none;
-        
     }
     .nav-menu a{
         text-decoration: none;
         color: hsl(236, 13%, 42%);
         padding: 0px;
     }
-    /* Estilos para el botón de menú */
+
     .btnMenu{
         display: block;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        line-height: 0;
     }
-    /* Estilo para hoover */
-    .nav-menu a:hover{
-        color: hsl(5, 85%, 63%);
+
+    .iconMenu{
+        width: 40px;
+        height: 18px;
+    }
+
+    .news{
+        grid-template-columns: 1fr;
+        gap: 34px;
+        margin: 0 20px;
+    }
+
+    .newArticle{
+        gap: 16px;
+    }
+
+    .imgNews{
+        width: 100%;
+    }
+
+    .newContainerInfo{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .titleNew{
+        font-size: clamp(3rem, 13vw, 3.6rem);
+        line-height: 0.95;
+        margin: 0;
+        letter-spacing: -0.02em;
+    }
+
+    .newContainerInfoTextButton p,
+    .newArticle p{
+        font-size: 15px;
+        line-height: 1.7;
+        margin-top: 18px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .btnReadMore{
+        margin-top: 22px;
+        padding: 14px 28px;
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+
+    .asideNews{
+        margin-right: 0;
+        width: auto;
+        gap: 0;
+    }
+
+    .asideNewsItem{
+        padding: 28px 20px;
+    }
+
+    .asideNewsItem h2{
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+
+    .asideNewsItem h3{
+        font-size: 1.15rem;
+        line-height: 1.25;
+    }
+
+    .recommendedNews{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 10px 20px 56px;
+    }
+
+    .recommendedNewsItem{
+        gap: 16px;
+    }
+
+    .recommendedNewsItem img{
+        width: 100px;
+        height: 127px;
+    }
+
+    .recommendedNewsItem h2{
+        font-size: 30px;
+    }
+
+    .recommendedNewsItem h3{
+        font-size: 17px;
+        margin: 10px 0 8px;
+    }
+
+    .recommendedNewsItem p{
+        line-height: 1.7;
     }
 
 }
