@@ -1,2 +1,2 @@
 # frontendmentor-practices
-Mis soluciones de los desafíos de Frontend Mentor
+Mis solución a la practica News homepage.
