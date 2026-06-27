@@ -1,2 +1,2 @@
 # frontendmentor-practices
-Mis solución a la practica News homepage.
+Mi solución a la practica News homepage.
